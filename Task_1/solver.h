@@ -1,22 +1,16 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <vector>
 
 
 class Task {
 public:
     Task();
-    Task(std::string);
-    void load(const std::string);
+    virtual void load();
+    virtual void get_initial_solution();
 };
 
-class Knapsack : public Task {
-
-};
-
-class TSP : public Task {
-
-};
 
 class Solver {
 
